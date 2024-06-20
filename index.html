@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maratona de Ideias para Soluções Tecnológicas Locais</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        body {
+        font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 60%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        input[type="submit"]:hover {
+            background-color: #218838;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Maratona de Ideias para Soluções Tecnológicas Locais</h1>
+    <form action="#" method="post">
+        
+        <div class="section">
+            <h2>1. Informações Pessoais</h2>
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+
+            <label for="cidade">Cidade/Estado:</label>
+            <input type="text" id="cidade" name="cidade" required>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+        </div>
+
+        <div class="section">
+            <h2>2. Formação Acadêmica e Profissional</h2>
+            <label for="escolaridade">Nível de Escolaridade:</label>
+            <select id="escolaridade" name="escolaridade" required>
+                <option value="ensino-medio">Ensino Médio</option>
+                <option value="tecnico">Técnico</option>
+                <option value="graduacao">Graduação</option>
+                <option value="pos-graduacao">Pós-Graduação</option>
+                <option value="mestrado">Mestrado</option>
+                <option value="doutorado">Doutorado</option>
+            </select>
+
+            <label for="area-formacao">Área de Formação:</label>
+            <input type="text" id="area-formacao" name="area-formacao" required>
+
+            <label for="instituicao">Instituição de Ensino:</label>
+            <input type="text" id="instituicao" name="instituicao" required>
+
+            <label for="experiencia">Experiência Profissional:</label>
+            <textarea id="experiencia" name="experiencia" rows="4" required></textarea>
+        </div>
+
+        <div class="section">
+            <h2>3. Ideia Inovadora</h2>
+            <label for="titulo-ideia">Título da Ideia:</label>
+            <input type="text" id="titulo-ideia" name="titulo-ideia" required>
+
+            <label for="descricao-ideia">Descrição da Ideia:</label>
+            <textarea id="descricao-ideia" name="descricao-ideia" rows="4" required></textarea>
+
+            <label for="problema">Problema Local que a Ideia Resolve:</label>
+            <textarea id="problema" name="problema" rows="4" required></textarea>
+
+            <label for="beneficios">Benefícios Esperados:</label>
+            <textarea id="beneficios" name="beneficios" rows="4" required></textarea>
+
+            <label for="tecnologias">Tecnologias Utilizadas:</label>
+            <textarea id="tecnologias" name="tecnologias" rows="4" required></textarea>
+
+            <label for="etapas">Etapas de Implementação:</label>
+            <textarea id="etapas" name="etapas" rows="4" required></textarea>
+        </div>
+
+        <div class="section">
+            <h2>4. Equipe (se aplicável)</h2>
+            <label for="integrantes">Nome dos Integrantes da Equipe:</label>
+            <textarea id="integrantes" name="integrantes" rows="2"></textarea>
+
+            <label for="funcoes">Funções de Cada Integrante:</label>
+            <textarea id="funcoes" name="funcoes" rows="2"></textarea>
+
+            <label for="experiencia-equipe">Experiência dos Integrantes:</label>
+            <textarea id="experiencia-equipe" name="experiencia-equipe" rows="4"></textarea>
+        </div>
+
+        <div class="section">
+            <h2>5. Recursos Necessários</h2>
+            <label for="recursos-financeiros">Recursos Financeiros:</label>
+            <textarea id="recursos-financeiros" name="recursos-financeiros" rows="2" required></textarea>
+
+            <label for="recursos-humanos">Recursos Humanos:</label>
+            <textarea id="recursos-humanos" name="recursos-humanos" rows="2" required></textarea>
+
+            <label for="recursos-materiais">Recursos Materiais:</label>
+            <textarea id="recursos-materiais" name="recursos-materiais" rows="2" required></textarea>
+        </div>
+
+        <div class="section">
+            <h2>6. Viabilidade e Sustentabilidade</h2>
+            <label for="plano-viabilidade">Plano de Viabilidade:</label>
+            <textarea id="plano-viabilidade" name="plano-viabilidade" rows="4" required></textarea>
+
+            <label for="sustentabilidade">Sustentabilidade da Solução:</label>
+            <textarea id="sustentabilidade" name="sustentabilidade" rows="4" required></textarea>
+
+            <label for="parcerias">Parcerias Necessárias:</label>
+            <textarea id="parcerias" name="parcerias" rows="4" required></textarea>
+        </div>
+
+        <div class="section">
+            <h2>7. Outras Informações</h2>
+            <label for="como-soube">Como ficou sabendo da Maratona de Ideias?</label>
+            <textarea id="como-soube" name="como-soube" rows="2" required></textarea>
+
+            <label for="eventos-semelhantes">Já participou de eventos semelhantes?</label>
+            <textarea id="eventos-semelhantes" name="eventos-semelhantes" rows="2" required></textarea>
+
+            <label for="comentarios">Comentários Adicionais:</label>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+        </div>
+
+        <input type="submit" value="Enviar Ideia">
+    </form>
+</div>
+
+</body>
+</html>

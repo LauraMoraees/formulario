@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maratona de Ideias para Soluções Tecnológicas Locais</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #27ae60;
+            padding-bottom: 5px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #34495e;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: #ecf0f1;
+        }
+        input[type="submit"] {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 15px;
+            cursor: pointer;
+            font-size: 18px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        input[type="submit"]:hover {
+            background-color: #218c54;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section:nth-child(odd) {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .section:nth-child(even) {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Maratona de Ideias para Soluções Tecnológicas Locais</h1>
+    <form action="#" method="post">
+        
+        <div class="section">
+            <h2>1. Informações Pessoais</h2>
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required>
+            </div>
+            <div class="form-group">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+            </div>
+            <div class="form-group">
+                <label for="cidade">Cidade/Estado:</label>
+                <input type="text" id="cidade" name="cidade" required>
+            </div>
+            <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>2. Formação Acadêmica e Profissional</h2>
+            <div class="form-group">
+                <label for="escolaridade">Nível de Escolaridade:</label>
+                <select id="escolaridade" name="escolaridade" required>
+                    <option value="ensino-medio">Ensino Médio</option>
+                    <option value="tecnico">Técnico</option>
+                    <option value="graduacao">Graduação</option>
+                    <option value="pos-graduacao">Pós-Graduação</option>
+                    <option value="mestrado">Mestrado</option>
+                    <option value="doutorado">Doutorado</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="area-formacao">Área de Formação:</label>
+                <input type="text" id="area-formacao" name="area-formacao" required>
+            </div>
+            <div class="form-group">
+                <label for="instituicao">Instituição de Ensino:</label>
+                <input type="text" id="instituicao" name="instituicao" required>
+            </div>
+            <div class="form-group">
+                <label for="experiencia">Experiência Profissional:</label>
+                <textarea id="experiencia" name="experiencia" rows="4" required></textarea>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>3. Ideia Inovadora</h2>
+            <div class="form-group">
+                <label for="titulo-ideia">Título da Ideia:</label>
+                <input type="text" id="titulo-ideia" name="titulo-ideia" required>
+            </div>
+            <div class="form-group">
+                <label for="descricao-ideia">Descrição da Ideia:</label>
+                <textarea id="descricao-ideia" name="descricao-ideia" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="problema">Problema Local que a Ideia Resolve:</label>
+                <textarea id="problema" name="problema" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="beneficios">Benefícios Esperados:</label>
+                <textarea id="beneficios" name="beneficios" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="tecnologias">Tecnologias Utilizadas:</label>
+                <textarea id="tecnologias" name="tecnologias" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="etapas">Etapas de Implementação:</label>
+                <textarea id="etapas" name="etapas" rows="4" required></textarea>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>4. Equipe (se aplicável)</h2>
+            <div class="form-group">
+                <label for="integrantes">Nome dos Integrantes da Equipe:</label>
+                <textarea id="integrantes" name="integrantes" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="funcoes">Funções de Cada Integrante:</label>
+                <textarea id="funcoes" name="funcoes" rows="2"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="experiencia-equipe">Experiência dos Integrantes:</label>
+                <textarea id="experiencia-equipe" name="experiencia-equipe" rows="4"></textarea>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>5. Recursos Necessários</h2>
+            <div class="form-group">
+                <label for="recursos-financeiros">Recursos Financeiros:</label>
+                <textarea id="recursos-financeiros" name="recursos-financeiros" rows="2" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="recursos-humanos">Recursos Humanos:</label>
+                <textarea id="recursos-humanos" name="recursos-humanos" rows="2" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="recursos-materiais">Recursos Materiais:</label>
+                <textarea id="recursos-materiais" name="recursos-materiais" rows="2" required></textarea>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>6. Viabilidade e Sustentabilidade</h2>
+            <div class="form-group">
+                <label for="plano-viabilidade">Plano de Viabilidade:</label>
+                <textarea id="plano-viabilidade" name="plano-viabilidade" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="sustentabilidade">Sustentabilidade da Solução:</label>
+                <textarea id="sust
